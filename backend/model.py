@@ -44,11 +44,7 @@ class Models:
 
     def model(self, dataset):
         # Read existing data from the CSV file and update start_angle for the first row
-        updated_data = [dataset]
-
-        updated_data_df = pd.DataFrame(updated_data)
-        print("updated_data_df\n", updated_data_df)
-        print("updated_data_df\n", updated_data_df.columns)
+        print("dataset", dataset)
 
         predictions_df = []
         print("predictions_df", predictions_df)
