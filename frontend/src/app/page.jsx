@@ -18,7 +18,7 @@ export default function Home() {
     <div className={styles.container}>
       <Uploads images={images} setImages={setImages} />
       <div className={styles.submit}>
-        <button onClick={submit}>Submit</button>
+        <button onClick={submit}>Recognize</button>
       </div>
       <div className={styles.predictions}>
         {prediction.map((item) => (

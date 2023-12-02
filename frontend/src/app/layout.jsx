@@ -8,7 +8,7 @@ import Notifications from "@/components/notification/Notifications";
 export const metadata = {
   title: "Digit Recognizer",
   description: "Digit Recognizer",
-  icons: { icon: "/logo.jpg" },
+  icons: { icon: "/logo.png" },
 };
 
 export default function RootLayout({ children }) {

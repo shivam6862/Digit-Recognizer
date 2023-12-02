@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { v4 } from "uuid";
 import { MdDeleteForever } from "react-icons/md";
+import Link from "next/link";
 
 const Uploads = ({ images, setImages }) => {
   return (
@@ -35,7 +36,9 @@ const Uploads = ({ images, setImages }) => {
         {images.map((item, index) => (
           <div key={index} className={classes.image}>
             <Image src={item.url} alt="img" height={250} width={250} />
-            <div className={classes.name}>{item.name}</div>
+            <Link href={item.url} target="_blank">
+              <div className={classes.name}>{item.name}</div>
+            </Link>
             <div
               className={classes.delete}
               onClick={() => {
