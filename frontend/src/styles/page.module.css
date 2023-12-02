@@ -2,18 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-.togglebutton {
-  position: absolute;
-  top: 4rem;
-  right: 1rem;
-}
-.togglebutton > svg {
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
-  color: black;
+  align-items: flex-start;
+  padding: 1rem;
 }
 .submit {
   width: 100%;
@@ -27,9 +17,43 @@
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.5rem;
-  background-color: #f1356d;
+  background-color: var(--primary-color);
   color: white;
   font-size: 1rem;
   cursor: pointer;
   margin-right: 1rem;
+}
+.predictions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.prediction {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid var(--primary-color);
+  width: 100%;
+  gap: 2rem;
+  border-radius: 4px;
+  padding: 1rem;
+}
+.prediction > img {
+  width: 100px;
+  height: 100px;
+}
+.prediction > div > h5 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.3rem;
+}
+.prediction > div > p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.3rem;
 }

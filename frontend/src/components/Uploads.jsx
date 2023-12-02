@@ -3,6 +3,7 @@ import classes from "@/styles/Uploads.module.css";
 import React from "react";
 import Image from "next/image";
 import { v4 } from "uuid";
+import { MdDeleteForever } from "react-icons/md";
 
 const Uploads = ({ images, setImages }) => {
   return (
@@ -33,7 +34,7 @@ const Uploads = ({ images, setImages }) => {
       <div className={classes.images}>
         {images.map((item, index) => (
           <div key={index} className={classes.image}>
-            <Image src={item.url} alt="img" height={300} width={400} />
+            <Image src={item.url} alt="img" height={250} width={250} />
             <div className={classes.name}>{item.name}</div>
             <div
               className={classes.delete}
@@ -43,7 +44,7 @@ const Uploads = ({ images, setImages }) => {
                 );
               }}
             >
-              X
+              <MdDeleteForever />
             </div>
           </div>
         ))}

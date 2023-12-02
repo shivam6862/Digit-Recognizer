@@ -3,6 +3,7 @@ import pandas as pd
 import tensorflow as tf
 import numpy as np
 from tensorflow import keras
+import matplotlib.pyplot as plt
 import csv
 import os
 import sys
@@ -80,7 +81,7 @@ class Models:
 
         y_classes_x_test_df = [np.argmax(i) for i in y_predicted_x_test_df]
 
-        y_classes_x_test_df = ' '.join(
+        y_classes_x_test_df = ','.join(
             [str(elem) for elem in y_classes_x_test_df])
 
         print("predictions", y_classes_x_test_df)

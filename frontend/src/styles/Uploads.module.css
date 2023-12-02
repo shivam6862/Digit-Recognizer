@@ -37,38 +37,42 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1rem;
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 .image {
-  max-width: 390px;
-  height: 220px;
-  margin: 10px;
+  width: 120px;
+  height: 160px;
   border: 1px solid #ccc;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 0.5rem;
   position: relative;
+  padding-bottom: 0.5rem;
 }
 .image > img {
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 .name {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 10px;
+  font-weight: 300;
   cursor: pointer;
   text-transform: uppercase;
+  width: 120px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
 }
 .delete {
   position: absolute;
-  top: -1rem;
-  right: -1rem;
-  background-color: #000;
+  bottom: -0.3rem;
+  right: -0.2rem;
+}
+.delete > svg {
   color: var(--primary-color);
-  padding: 0.4rem;
-  border-radius: 0.4rem;
+  font-size: 1.3rem;
   cursor: pointer;
 }

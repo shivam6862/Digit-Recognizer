@@ -26,7 +26,12 @@ const usePYModels = () => {
       if (resData.status == resData.status) {
         NotificationHandler(resData.title, resData.message, resData.status);
       }
-      return resData.about;
+      const responseData = resData.about.split(",");
+      var predictionArray = images;
+      for (var i = 0; i < predictionArray.length; i++) {
+        predictionArray[i]["prediction"] = responseData[i];
+      }
+      return predictionArray;
     } catch (error) {
       console.log(error.message);
       NotificationHandler("Error", "Predictions failed to work.", "Error");
